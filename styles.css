@@ -87,13 +87,17 @@ nav a:hover {
     gap: 15px;
 }
 
-.right-section {
+.right-section, .form-container {
     flex: 1;
     max-width: 55%;
     background-color: #1c3b5f;
     padding: 30px 5px;
     border-radius: 16px;
     color: white;
+}
+
+.form-container {
+  justify-self:center;
 }
 
 .right-section h2 {
@@ -105,14 +109,14 @@ nav a:hover {
 form {
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap: 20px ;
     color: #d8d8d8;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 }
 
-input {
+input, textarea {
     padding: 12px;
     border-radius: 18px;
     border: 2px solid white;
@@ -121,12 +125,12 @@ input {
     color: #d8d8d8;
 }
 
-input::placeholder {
+input::placeholder, textarea::placeholder {
     color: rgb(245, 245, 245);
     opacity: 80%;
 }
 
-input:focus {
+input:focus, textarea:focus {
     outline: none;
 }
 
@@ -364,4 +368,44 @@ input:focus {
     font-weight: 500;
     color: #002766;
   }
+
   
+  .highlight {
+    color: #f5b83b;
+    font-weight: bold;
+  }
+
+  .form-row input {
+    margin-right: 40px;
+    width: 280px;
+  }
+
+  .form-text h2 {
+    margin: 1rem;
+    text-align: center;
+  }
+  
+  .form-text p {
+    margin-bottom: 40px;
+    font-size: 16px;
+    color: #f9f4f4;
+    text-align: center;
+  }
+
+  textarea{
+    margin: 1rem 0;
+    margin-right: 18px;
+  }
+  
+  .last-row {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .last-row input {
+    width: 610px;
+    margin-right: 25px;
+  }
